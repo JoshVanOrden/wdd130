@@ -78,7 +78,7 @@ nav {
 }
 .msg {
     background-color:#876D52;
-    line-height: 1.5em;
+    line-height: 2.5em;
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
