@@ -207,6 +207,57 @@ main section img{
     box-sizing: border-box;
 }
 
+/* Commands for the rivers page */
+
+main, .rivers-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+main, .rivers-grid, h2, h3, h4{
+    grid-column: 1/10;
+    margin: 35px;
+    margin-top: 100px;
+}
+
+.idaho-card{
+    grid-column: 1/10;
+    display: flex;
+    border: 10px solid #18394D;
+    background-color: #18394D;
+}
+
+.utah-card{
+    grid-column: 1/10;
+    display: flex;
+    border: 10px solid #18394D;
+    background-color: #18394D;
+}
+
+.arizona-card{
+    grid-column: 1/10;
+    display: flex;
+    border: 10px solid #18394D;
+    background-color: #18394D;
+}
+
+.rivers-img{
+    width: 50%;
+}
+
+.rivers-text{
+    line-height: 2em;
+    padding: 15px;
+    background-color: #876D52;
+    color: white;
+}
+
+main, .rivers-grid, h2{
+    margin-top: 25px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
