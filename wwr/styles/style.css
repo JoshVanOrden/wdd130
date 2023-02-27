@@ -210,6 +210,8 @@ main section img{
 /* Commands for the rivers page */
 
 main, .rivers-grid{
+    max-width: 1600px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
