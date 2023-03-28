@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Source+Serif+Pro&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 350px auto;
+    text-align: center;
+    font-family: "Hammersmith One", Helvetica, sans-serif;
+    font-size: 50px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D90429;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 205px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 50px;
+}
+nav a:hover{
+    background-color:#EF233C;
+}
+
+#logo_link {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    margin-top: -125px;
+    margin-left: -150px;
+    z-index: -2;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(1fr, 10)
+}
+.home1{
+    grid-area: 2/4/3/9;
+    width: 100%;
+    margin-top: -100px;
+}
+.home2{
+    grid-area: 6/2/7/6;
+    width: 100%;
+    margin-top: 50px;
+}
+p {
+    text-align: center;
+    font-family: "Source Serif Pro", Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 2em;
+    padding: 50px;
+}
+p:nth-of-type(1){
+    grid-area: 2/2/3/4;
+    background-color: #8D99AE;
+    margin-top: -80px;
+}
+p:nth-of-type(2){
+    grid-area: 4/2/5/5;
+    background-color: #2B2D42;
+    color: white;
+    margin-top: 50px;
+}
+p:nth-of-type(3){
+    grid-area: 4/5/5/9;
+    background-color: #2B2D42;
+    color: white;
+    margin-top: 50px;
+}
+p:nth-of-type(4){
+    grid-area: 6/6/7/9;
+    background-color: #8D99AE;
+    margin-top: 70px;
+}
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin-top: 100px;
+    background-color: #D90429;
+}
+footer a{
+    font-family: "Hammersmith One", Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    padding: 50px;
+}
+footer a:hover{
+    background-color: #EF233C;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        display: block;
+        height: auto;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    p:nth-of-type(1){
+        margin-bottom: 150px;
+    }
+    footer{
+        display: block;
+        padding: 0px;
+    }
+    footer a {
+        display: block;
+        padding: 10px;
+    }
+}
