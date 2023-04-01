@@ -3,27 +3,26 @@
 #content {
     max-width: 1600px;
     margin: 0 auto;
-}
+}   
 
 header {
     display: grid;
     grid-template-columns: 350px auto;
     text-align: center;
+    margin-bottom: 30px;
     font-family: "Hammersmith One", Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 25px;
 }
 nav {
     display: flex;
-    justify-content: space-around;
-    background-color: #D90429;
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 205px;
+    justify-content: space-around; 
+    background-color: #D90429; 
+    align-self: center;
 }
 nav a{
     text-decoration: none;
     color: white;
-    padding: 50px;
+    padding: 70px;
 }
 nav a:hover{
     background-color:#EF233C;
@@ -33,100 +32,131 @@ nav a:hover{
     justify-self: center;
     align-self: center;
     width: 100%;
-    margin-top: -125px;
-    margin-left: -150px;
-    z-index: -2;
 }
 main {
-    display: grid;
-    grid-template-columns: repeat(1fr, 10)
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr);
+    gap: 50px;
 }
 .home1{
-    grid-area: 2/4/3/9;
-    width: 100%;
-    margin-top: -100px;
+    grid-area: 1/5/3/10; 
+    width: 100%; 
 }
 .home2{
-    grid-area: 6/2/7/6;
+    grid-area: 4/2/5/7;
     width: 100%;
-    margin-top: 50px;
 }
 .learn-more1{
-    grid-area: 2/4/3/9;
+    grid-area: 1/5/3/10;
     width: 100%;
-    margin-top: -100px;
 }
-p {
-    text-align: center;
-    font-family: "Source Serif Pro", Helvetica, sans-serif;
-    font-size: 25px;
-    line-height: 2em;
-    padding: 50px;
+.apply-now1{
+    grid-area: 1/2/3/6;
+    width: 100%;
+    z-index: 1;
 }
-p:nth-of-type(1){
-    grid-area: 2/2/3/4;
+.apply-now2{
+    grid-area: 4/5/5/10;
+    width: 100%;
+}
+main p {
+    font-family: "Source Serif Pro", Helvetica, sans-serif; 
+    font-size: 25px; 
+    padding: 25px;
+}
+main p:nth-of-type(1){
+    grid-area: 1/2/3/5; 
     background-color: #8D99AE;
-    margin-top: -80px;
 }
-p:nth-of-type(2){
+main p:nth-of-type(2){
+    grid-area: 3/2/4/6;
+    background-color: #2B2D42;
+    color: white;
+}
+main p:nth-of-type(3){
+    grid-area: 3/6/4/10;
+    background-color: #2B2D42; 
+    color: white;
+}
+main p:nth-of-type(4){
+    grid-area: 4/7/5/10; 
+    background-color: #8D99AE; 
+}
+.p1 {
+    grid-area: 1/6/3/10;
+    background-color: #8D99AE; 
+}
+.p2{
+    grid-area: 3/2/4/6;
+    background-color: #8D99AE;
+    color: black;
+}
+.p3{
+    grid-area: 3/6/4/10;
+    background-color: #8D99AE; 
+    color: black;
+}
+.p4{
+    background-color: #8D99AE; 
     grid-area: 4/2/5/5;
-    background-color: #2B2D42;
-    color: white;
-    margin-top: 50px;
+
 }
-p:nth-of-type(3){
-    grid-area: 4/6/5/9;
-    background-color: #2B2D42;
-    color: white;
-    margin-top: 50px;
+.join-button{
+    background-color: #D90429;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
 }
-p:nth-of-type(4){
-    grid-area: 6/6/7/9;
-    background-color: #8D99AE;
-    margin-top: 70px;
+.join{
+    font-family: "Source Serif Pro", Helvetica, sans-serif; 
+    font-size: 25px; 
+    padding: 25px;
+    color: white;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+.join-button:hover{
+    background-color: #EF233C;
 }
 footer{
     display: grid;
     grid-template-columns: auto;
     text-align: center;
     display: flex;
+    margin-top: 50px;
     justify-content: space-around;
-    padding: 50px;
-    margin-top: 100px;
-    background-color: #D90429;
+    background-color: #850000;
 }
 footer a{
+    font-size: 20px;
+    padding: 40px;
     font-family: "Hammersmith One", Helvetica, sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 50px;
-    padding: 50px;
 }
 footer a:hover{
-    background-color: #EF233C;
+    background-color: #D90429;
+}
+footer p{
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Hammersmith One", Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     main {
         display: block;
         height: auto;
     }
     nav {
         flex-direction: column;
+        padding: 10px;
     }
-    nav a {
+    nav a, footer, footer a {
         display: block;
-        padding: 15px;
-    }
-    p:nth-of-type(1){
-        margin-bottom: 150px;
-    }
-    footer{
-        display: block;
-        padding: 20px;
-    }
-    footer a {
-        display: block;
-        padding: 0px;
+        padding: 5px;
     }
 }
