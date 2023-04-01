@@ -12,6 +12,8 @@ header {
     margin-bottom: 30px;
     font-family: "Hammersmith One", Helvetica, sans-serif;
     font-size: 25px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 nav {
     display: flex;
@@ -34,6 +36,8 @@ nav a:hover{
     width: 100%;
 }
 main {
+    max-width: 1600px;
+    margin: 0 auto;
     display: grid; 
     grid-template-columns: repeat(10, 1fr);
     gap: 50px;
@@ -120,6 +124,8 @@ main p:nth-of-type(4){
     background-color: #EF233C;
 }
 footer{
+    max-width: 1600px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto;
     text-align: center;
